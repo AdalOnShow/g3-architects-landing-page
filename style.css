@@ -24,7 +24,8 @@ html {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1480px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -58,6 +59,53 @@ html {
             font-size: 18px;
             font-weight: 500;
             color: var(--dark-2);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/* responsive for small device */
+@media screen and (max-width: 576px) {
+  #hero {
+    header {
+      padding-top: 30px;
+      #logo {
+        font-size: 20px;
+      }
+      nav {
+        ul {
+          gap: 8px;
+          li {
+            list-style: none;
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* responsive for medium device */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #hero {
+    header {
+      padding-top: 30px;
+      #logo {
+        font-size: 35px;
+      }
+      nav {
+        ul {
+          gap: 14px;
+          li {
+            a {
+              font-size: 16px;
+            }
           }
         }
       }
